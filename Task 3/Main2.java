@@ -38,3 +38,22 @@ class AreaCalculator {
 }
 
 
+public class Main {
+    public static void main(String[] args) {
+
+        Rectangle r = new Rectangle();
+        r.length = 10;
+        r.width = 5;
+
+        Circle c = new Circle();
+        c.radius = 7;
+
+        Shape[] shapes = {r, c};
+
+        AreaCalculator calculator = new AreaCalculator();
+
+        System.out.println(
+            "Total Area = " +
+            calculator.calculateTotalArea(shapes)
+        );
+    }
